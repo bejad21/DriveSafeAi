@@ -30,7 +30,7 @@ The dashboard is built entirely with **Streamlit**, giving it a web-based, zero-
 ### 🤕 Head Tilt Detection
 - Computes facial roll angle from landmark geometry in real time.
 - Detects lateral head drops toward the shoulder — a key indicator of microsleep.
-- Alert fires immediately when the tilt exceeds the critical threshold (3 seconds), with no artificial delay.
+- Alert fires immediately when the tilt exceeds the critical threshold (3 seconds).
 
 ### 🌙 Night Vision Mode
 - Automatically detects low-light conditions using frame brightness analysis.
@@ -89,7 +89,7 @@ drivesafe-ai/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/drivesafe-ai.git
+git clone https://github.com/bejad21/DriveSafeAi.git
 cd drivesafe-ai
 ```
 
@@ -110,16 +110,13 @@ pip install -r requirements.txt
 ```
 
 ### 4. Add your Groq API key
-open `.env` and replace the placeholder:
+In your project's root directory, create a new file named `.env` and add the following line and replace the placeholder:
 ```
 GROQ_API_KEY=your_actual_groq_api_key_here
 ```
 Get a free API key at [console.groq.com](https://console.groq.com).
 
-### 5. Add the model file
-Place your `drivesafe_model.tflite` file in the root of the project directory. This file is not included in the repository due to file size.
-
-### 6. Run the app
+### 5. Run the app
 ```bash
 streamlit run app.py
 ```
